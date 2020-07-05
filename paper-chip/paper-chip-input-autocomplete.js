@@ -368,7 +368,6 @@ class PaperChipInputAutocomplete extends PolymerElement {
   }
 
   _isEmpty(item) {
-    console.log("item", item);
     return item.length > 0;
   }
 
@@ -445,7 +444,6 @@ class PaperChipInputAutocomplete extends PolymerElement {
   }
 
   _filterItems() {
-    console.log("this._filterItems");
     let filteredByString = this.source.filter((element) =>
       this._filterBySearchString(element)
     );
@@ -464,7 +462,6 @@ class PaperChipInputAutocomplete extends PolymerElement {
   }
 
   _filterBySearchString(element) {
-    console.log(element);
     return (
       element.text.toLowerCase().indexOf(this._inputValue.toLowerCase()) >= 0
     );
